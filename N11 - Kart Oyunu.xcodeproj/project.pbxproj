@@ -3,25 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		292E9CD822DDF8C500CFF325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E9CD722DDF8C500CFF325 /* AppDelegate.swift */; };
-		292E9CDA22DDF8C500CFF325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E9CD922DDF8C500CFF325 /* ViewController.swift */; };
 		292E9CDD22DDF8C500CFF325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292E9CDB22DDF8C500CFF325 /* Main.storyboard */; };
 		292E9CDF22DDF8C700CFF325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292E9CDE22DDF8C700CFF325 /* Assets.xcassets */; };
 		292E9CE222DDF8C700CFF325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292E9CE022DDF8C700CFF325 /* LaunchScreen.storyboard */; };
+		292E9CEA22DDF93C00CFF325 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 292E9CE922DDF93C00CFF325 /* GoogleService-Info.plist */; };
+		292E9CEC22DE041E00CFF325 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E9CEB22DE041E00CFF325 /* RegisterViewController.swift */; };
+		292E9CEE22DE07D100CFF325 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E9CED22DE07D100CFF325 /* Service.swift */; };
+		298B8EA722E0975F00DD034D /* SetProfilePicturePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298B8EA622E0975F00DD034D /* SetProfilePicturePopUpViewController.swift */; };
+		298B8EA922E09C7600DD034D /* DefaultProfilePicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298B8EA822E09C7600DD034D /* DefaultProfilePicCollectionViewCell.swift */; };
+		2995BD6322DF0BA400BEDE4F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995BD6222DF0BA400BEDE4F /* MainViewController.swift */; };
+		29FE15D222E6DFD300E11D54 /* GameCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE15D122E6DFD300E11D54 /* GameCardCollectionViewCell.swift */; };
+		29FE15D422E6DFE900E11D54 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE15D322E6DFE900E11D54 /* GameScreenViewController.swift */; };
+		99ADA6CC5051E52BEE1FC499 /* Pods_N11___Kart_Oyunu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA158C45FE3CFCE2103532F9 /* Pods_N11___Kart_Oyunu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		292E9CD422DDF8C500CFF325 /* N11 - Kart Oyunu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N11 - Kart Oyunu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		292E9CD722DDF8C500CFF325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		292E9CD922DDF8C500CFF325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		292E9CDC22DDF8C500CFF325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		292E9CDE22DDF8C700CFF325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		292E9CE122DDF8C700CFF325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		292E9CE322DDF8C700CFF325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292E9CE922DDF93C00CFF325 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		292E9CEB22DE041E00CFF325 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		292E9CED22DE07D100CFF325 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		298B8EA622E0975F00DD034D /* SetProfilePicturePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProfilePicturePopUpViewController.swift; sourceTree = "<group>"; };
+		298B8EA822E09C7600DD034D /* DefaultProfilePicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultProfilePicCollectionViewCell.swift; sourceTree = "<group>"; };
+		2995BD6222DF0BA400BEDE4F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		29FE15D122E6DFD300E11D54 /* GameCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		29FE15D322E6DFE900E11D54 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
+		5FE50EF5B6A6CE43745EFB1D /* Pods-N11 - Kart Oyunu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-N11 - Kart Oyunu.debug.xcconfig"; path = "Target Support Files/Pods-N11 - Kart Oyunu/Pods-N11 - Kart Oyunu.debug.xcconfig"; sourceTree = "<group>"; };
+		8CE5775336413B5CDF62C891 /* Pods-N11 - Kart Oyunu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-N11 - Kart Oyunu.release.xcconfig"; path = "Target Support Files/Pods-N11 - Kart Oyunu/Pods-N11 - Kart Oyunu.release.xcconfig"; sourceTree = "<group>"; };
+		CA158C45FE3CFCE2103532F9 /* Pods_N11___Kart_Oyunu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_N11___Kart_Oyunu.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99ADA6CC5051E52BEE1FC499 /* Pods_N11___Kart_Oyunu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				292E9CD622DDF8C500CFF325 /* N11 - Kart Oyunu */,
 				292E9CD522DDF8C500CFF325 /* Products */,
+				9159E8F4C7C1DF4D1D9AE907 /* Pods */,
+				7FC95DC40366E6E77644CFD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +76,45 @@
 			isa = PBXGroup;
 			children = (
 				292E9CD722DDF8C500CFF325 /* AppDelegate.swift */,
-				292E9CD922DDF8C500CFF325 /* ViewController.swift */,
 				292E9CDB22DDF8C500CFF325 /* Main.storyboard */,
 				292E9CDE22DDF8C700CFF325 /* Assets.xcassets */,
 				292E9CE022DDF8C700CFF325 /* LaunchScreen.storyboard */,
 				292E9CE322DDF8C700CFF325 /* Info.plist */,
+				292E9CE922DDF93C00CFF325 /* GoogleService-Info.plist */,
+				292E9CEB22DE041E00CFF325 /* RegisterViewController.swift */,
+				292E9CED22DE07D100CFF325 /* Service.swift */,
+				2995BD6222DF0BA400BEDE4F /* MainViewController.swift */,
+				29FE15D022E6DFB400E11D54 /* ProfilePicture */,
+				29FE15D122E6DFD300E11D54 /* GameCardCollectionViewCell.swift */,
+				29FE15D322E6DFE900E11D54 /* GameScreenViewController.swift */,
 			);
 			path = "N11 - Kart Oyunu";
+			sourceTree = "<group>";
+		};
+		29FE15D022E6DFB400E11D54 /* ProfilePicture */ = {
+			isa = PBXGroup;
+			children = (
+				298B8EA622E0975F00DD034D /* SetProfilePicturePopUpViewController.swift */,
+				298B8EA822E09C7600DD034D /* DefaultProfilePicCollectionViewCell.swift */,
+			);
+			path = ProfilePicture;
+			sourceTree = "<group>";
+		};
+		7FC95DC40366E6E77644CFD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA158C45FE3CFCE2103532F9 /* Pods_N11___Kart_Oyunu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9159E8F4C7C1DF4D1D9AE907 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FE50EF5B6A6CE43745EFB1D /* Pods-N11 - Kart Oyunu.debug.xcconfig */,
+				8CE5775336413B5CDF62C891 /* Pods-N11 - Kart Oyunu.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 292E9CE622DDF8C700CFF325 /* Build configuration list for PBXNativeTarget "N11 - Kart Oyunu" */;
 			buildPhases = (
+				677D83265D824EEE1DDC5127 /* [CP] Check Pods Manifest.lock */,
 				292E9CD022DDF8C500CFF325 /* Sources */,
 				292E9CD122DDF8C500CFF325 /* Frameworks */,
 				292E9CD222DDF8C500CFF325 /* Resources */,
+				2BEA52796C265277C6546BAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				292E9CE222DDF8C700CFF325 /* LaunchScreen.storyboard in Resources */,
+				292E9CEA22DDF93C00CFF325 /* GoogleService-Info.plist in Resources */,
 				292E9CDF22DDF8C700CFF325 /* Assets.xcassets in Resources */,
 				292E9CDD22DDF8C500CFF325 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +186,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BEA52796C265277C6546BAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-N11 - Kart Oyunu/Pods-N11 - Kart Oyunu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-N11 - Kart Oyunu/Pods-N11 - Kart Oyunu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-N11 - Kart Oyunu/Pods-N11 - Kart Oyunu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		677D83265D824EEE1DDC5127 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-N11 - Kart Oyunu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		292E9CD022DDF8C500CFF325 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				292E9CDA22DDF8C500CFF325 /* ViewController.swift in Sources */,
 				292E9CD822DDF8C500CFF325 /* AppDelegate.swift in Sources */,
+				29FE15D222E6DFD300E11D54 /* GameCardCollectionViewCell.swift in Sources */,
+				29FE15D422E6DFE900E11D54 /* GameScreenViewController.swift in Sources */,
+				292E9CEC22DE041E00CFF325 /* RegisterViewController.swift in Sources */,
+				292E9CEE22DE07D100CFF325 /* Service.swift in Sources */,
+				2995BD6322DF0BA400BEDE4F /* MainViewController.swift in Sources */,
+				298B8EA722E0975F00DD034D /* SetProfilePicturePopUpViewController.swift in Sources */,
+				298B8EA922E09C7600DD034D /* DefaultProfilePicCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,9 +384,11 @@
 		};
 		292E9CE722DDF8C700CFF325 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE50EF5B6A6CE43745EFB1D /* Pods-N11 - Kart Oyunu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2LP6Y6TQY;
 				INFOPLIST_FILE = "N11 - Kart Oyunu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +403,11 @@
 		};
 		292E9CE822DDF8C700CFF325 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CE5775336413B5CDF62C891 /* Pods-N11 - Kart Oyunu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2LP6Y6TQY;
 				INFOPLIST_FILE = "N11 - Kart Oyunu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

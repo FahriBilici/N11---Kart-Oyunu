@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>826124209270-acq9n5h24k5eaotpt51h1qtfk5gbm102.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.826124209270-acq9n5h24k5eaotpt51h1qtfk5gbm102</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDLb-hcyALCRzPVEJkYhzfo-AUdUoQmPdY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>826124209270</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>countryApp.N11---Kart-Oyunu</string>
+	<key>PROJECT_ID</key>
+	<string>n11-kart-oyunu</string>
+	<key>STORAGE_BUCKET</key>
+	<string>n11-kart-oyunu.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:826124209270:ios:8e5004a02f2691bb</string>
+	<key>DATABASE_URL</key>
+	<string>https://n11-kart-oyunu.firebaseio.com</string>
+</dict>
+</plist>
