@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s3j-rc-7gP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lp7-qp-bo9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -254,7 +254,7 @@
         <!--Game Screen View Controller-->
         <scene sceneID="ZMY-OY-gh5">
             <objects>
-                <viewController id="s3j-rc-7gP" customClass="GameScreenViewController" customModule="N11___Kart_Oyunu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Game" id="s3j-rc-7gP" customClass="GameScreenViewController" customModule="N11___Kart_Oyunu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RpX-vB-tVt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -298,12 +298,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Default Card" translatesAutoresizingMaskIntoConstraints="NO" id="00h-oi-b1u">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default Card" translatesAutoresizingMaskIntoConstraints="NO" id="00h-oi-b1u">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="00h-oi-b1u" firstAttribute="top" secondItem="A40-cq-Mwd" secondAttribute="top" id="Ap1-IE-ipC"/>
+                                            <constraint firstAttribute="bottom" secondItem="00h-oi-b1u" secondAttribute="bottom" id="Lmz-Gu-Bqc"/>
+                                            <constraint firstAttribute="trailing" secondItem="00h-oi-b1u" secondAttribute="trailing" id="fnD-jI-12A"/>
+                                            <constraint firstItem="00h-oi-b1u" firstAttribute="leading" secondItem="A40-cq-Mwd" secondAttribute="leading" id="zUQ-4m-2PM"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="cardPicture" destination="00h-oi-b1u" id="FAU-Y8-E5K"/>
                                         </connections>
@@ -318,6 +323,11 @@
                         <color key="backgroundColor" red="0.25666922330000003" green="0.32544851299999999" blue="0.34241059419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O3B-QC-I3V"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="6Gh-Pf-AN9" id="h58-ff-aVR"/>
+                        <outlet property="scoreLabel" destination="7Bc-t1-fKS" id="BSZ-hk-YSh"/>
+                        <outlet property="timeLabel" destination="0Va-ER-Y59" id="Web-W6-ERL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4J-Gh-vNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

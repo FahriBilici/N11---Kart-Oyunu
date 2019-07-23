@@ -19,6 +19,8 @@ class MainViewController: UIViewController {
     var isRegistered : Bool?
     var hasPicture : Bool?
     @IBAction func PlayBtn(_ sender: Any) {
+        let vc = storyboard!.instantiateViewController(withIdentifier: "Game")
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func LeadersBtn(_ sender: Any) {
