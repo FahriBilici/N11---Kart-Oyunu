@@ -9,6 +9,7 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
+pod 'lottie-ios'
   # Pods for N11 - Kart Oyunu
 
 end

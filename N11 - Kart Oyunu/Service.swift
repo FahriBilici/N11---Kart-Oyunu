@@ -69,7 +69,7 @@ class Service {
         let value = snapshot.value as? NSDictionary
             infoStorgage.append(value?["username"] as? String ?? "")
             infoStorgage.append(value?["profile_pic"] as? String ?? "")
-            infoStorgage.append(value?["highscore"] as? String ?? "")
+            infoStorgage.append(value?["highscore"] as? String ?? "0")
             infoStorgage.append(value?["lastScore"] as? String ?? "")
 
             success(infoStorgage)
@@ -90,6 +90,13 @@ class Service {
             }
         }
 
+    }
+    
+    func saveScore(userID : String,/*score : Int,*/ highScore : String, success: @escaping () -> ())
+    {
+        dbref = Database.database().reference()
+        dbref.child("users").child(userID).updateChildValues(["highscore" : highScore])
+        success()
     }
 }
 

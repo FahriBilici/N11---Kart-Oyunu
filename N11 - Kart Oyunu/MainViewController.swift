@@ -72,6 +72,7 @@ class MainViewController: UIViewController {
     {
         Service.shared.getUserInfo(userID: userID , success: ({userInfo in
             self.NickNameLabel.text = userInfo[0]
+            self.HighScoreLabel.text = "High Score : \(String(userInfo[2]))"
             Service.shared.geUserPhoto(userID: userID , success: ({image in
                 self.ProfilePic.image = image
             }))
@@ -82,6 +83,7 @@ class MainViewController: UIViewController {
     {
         UserDefaults.standard.removeObject(forKey: "userID")
         UserDefaults.standard.removeObject(forKey: "nickName")
+        UserDefaults.standard.removeObject(forKey: "highscore")
         self.NickNameLabel.text = ""
         self.ProfilePic.image = nil
         try! Auth.auth().signOut()

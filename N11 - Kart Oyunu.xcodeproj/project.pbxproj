@@ -19,6 +19,7 @@
 		2995BD6322DF0BA400BEDE4F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995BD6222DF0BA400BEDE4F /* MainViewController.swift */; };
 		29FE15D222E6DFD300E11D54 /* GameCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE15D122E6DFD300E11D54 /* GameCardCollectionViewCell.swift */; };
 		29FE15D422E6DFE900E11D54 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE15D322E6DFE900E11D54 /* GameScreenViewController.swift */; };
+		29FE15D822E7439200E11D54 /* FinishPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE15D722E7439200E11D54 /* FinishPopUpViewController.swift */; };
 		99ADA6CC5051E52BEE1FC499 /* Pods_N11___Kart_Oyunu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA158C45FE3CFCE2103532F9 /* Pods_N11___Kart_Oyunu.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		2995BD6222DF0BA400BEDE4F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		29FE15D122E6DFD300E11D54 /* GameCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		29FE15D322E6DFE900E11D54 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
+		29FE15D722E7439200E11D54 /* FinishPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPopUpViewController.swift; sourceTree = "<group>"; };
 		5FE50EF5B6A6CE43745EFB1D /* Pods-N11 - Kart Oyunu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-N11 - Kart Oyunu.debug.xcconfig"; path = "Target Support Files/Pods-N11 - Kart Oyunu/Pods-N11 - Kart Oyunu.debug.xcconfig"; sourceTree = "<group>"; };
 		8CE5775336413B5CDF62C891 /* Pods-N11 - Kart Oyunu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-N11 - Kart Oyunu.release.xcconfig"; path = "Target Support Files/Pods-N11 - Kart Oyunu/Pods-N11 - Kart Oyunu.release.xcconfig"; sourceTree = "<group>"; };
 		CA158C45FE3CFCE2103532F9 /* Pods_N11___Kart_Oyunu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_N11___Kart_Oyunu.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				292E9CD622DDF8C500CFF325 /* N11 - Kart Oyunu */,
-				292E9CD522DDF8C500CFF325 /* Products */,
 				9159E8F4C7C1DF4D1D9AE907 /* Pods */,
 				7FC95DC40366E6E77644CFD0 /* Frameworks */,
 			);
@@ -70,6 +71,7 @@
 				292E9CD422DDF8C500CFF325 /* N11 - Kart Oyunu.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		292E9CD622DDF8C500CFF325 /* N11 - Kart Oyunu */ = {
@@ -81,12 +83,11 @@
 				292E9CE022DDF8C700CFF325 /* LaunchScreen.storyboard */,
 				292E9CE322DDF8C700CFF325 /* Info.plist */,
 				292E9CE922DDF93C00CFF325 /* GoogleService-Info.plist */,
-				292E9CEB22DE041E00CFF325 /* RegisterViewController.swift */,
+				29FE15D622E7437200E11D54 /* Register */,
 				292E9CED22DE07D100CFF325 /* Service.swift */,
 				2995BD6222DF0BA400BEDE4F /* MainViewController.swift */,
 				29FE15D022E6DFB400E11D54 /* ProfilePicture */,
-				29FE15D122E6DFD300E11D54 /* GameCardCollectionViewCell.swift */,
-				29FE15D322E6DFE900E11D54 /* GameScreenViewController.swift */,
+				29FE15D522E7435F00E11D54 /* Game */,
 			);
 			path = "N11 - Kart Oyunu";
 			sourceTree = "<group>";
@@ -100,6 +101,24 @@
 			path = ProfilePicture;
 			sourceTree = "<group>";
 		};
+		29FE15D522E7435F00E11D54 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				29FE15D122E6DFD300E11D54 /* GameCardCollectionViewCell.swift */,
+				29FE15D322E6DFE900E11D54 /* GameScreenViewController.swift */,
+				29FE15D722E7439200E11D54 /* FinishPopUpViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		29FE15D622E7437200E11D54 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				292E9CEB22DE041E00CFF325 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		7FC95DC40366E6E77644CFD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +130,7 @@
 		9159E8F4C7C1DF4D1D9AE907 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				292E9CD522DDF8C500CFF325 /* Products */,
 				5FE50EF5B6A6CE43745EFB1D /* Pods-N11 - Kart Oyunu.debug.xcconfig */,
 				8CE5775336413B5CDF62C891 /* Pods-N11 - Kart Oyunu.release.xcconfig */,
 			);
@@ -237,6 +257,7 @@
 				29FE15D222E6DFD300E11D54 /* GameCardCollectionViewCell.swift in Sources */,
 				29FE15D422E6DFE900E11D54 /* GameScreenViewController.swift in Sources */,
 				292E9CEC22DE041E00CFF325 /* RegisterViewController.swift in Sources */,
+				29FE15D822E7439200E11D54 /* FinishPopUpViewController.swift in Sources */,
 				292E9CEE22DE07D100CFF325 /* Service.swift in Sources */,
 				2995BD6322DF0BA400BEDE4F /* MainViewController.swift in Sources */,
 				298B8EA722E0975F00DD034D /* SetProfilePicturePopUpViewController.swift in Sources */,
