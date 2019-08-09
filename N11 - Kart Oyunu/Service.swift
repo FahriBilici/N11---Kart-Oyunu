@@ -26,7 +26,7 @@ class Service {
             {
                 userID = id
                 let userAdder = dbref.child("users").child(userID)
-                userAdder.setValue(["username" : nickName,"password" : password])
+                userAdder.setValue(["username" : nickName,"password" : password,"highscore" : "0"])
                 print(nickName)
                 UserDefaults.standard.setValue(userID, forKey: "userID")
                 UserDefaults.standard.setValue(nickName, forKey: "nickName")
@@ -97,6 +97,39 @@ class Service {
         dbref = Database.database().reference()
         dbref.child("users").child(userID).updateChildValues(["highscore" : highScore])
         success()
+    }
+    
+    func getLeaderbord(success: @escaping ([Player]) -> ())
+    {
+        dbref = Database.database().reference()
+        var userList : [Player] = []
+        let userRef = dbref.child("users")
+        userRef.observe(.value) { (snapshot) in
+            for users in snapshot.children.allObjects as! [DataSnapshot]
+            {
+                let userObject = users.value as? [String : AnyObject]
+                let username = userObject?["username"]
+                let profile_pic = userObject?["profile_pic"]
+                let highscore = userObject?["highscore"]
+                let player = Player(username: username as! String, highscore: highscore as! String, profile_pic: profile_pic as! String)
+                
+                userList.append(player)
+            }
+            userList = self.sortPlayersByHighScore(playerList: userList)
+            success(userList)
+        }
+    }
+    func sortPlayersByHighScore (playerList : [Player]) -> [Player]
+    {
+        let sortedPlayers = playerList.sorted(by: { Int($0.highscore)! > Int($1.highscore)! })
+        return sortedPlayers
+    }
+    func downloadImgFromUrl(url : String) -> NSData
+    {
+        let imageUrl = URL(string: url)!
+        let imageData : NSData = NSData(contentsOf: imageUrl)!
+        return imageData
+    
     }
 }
 

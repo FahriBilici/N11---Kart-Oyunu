@@ -46,6 +46,8 @@ PODS:
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 6.0)
     - GTMSessionFetcher/Core (~> 1.1)
+  - Google-Mobile-Ads-SDK (7.46.0):
+    - GoogleAppMeasurement (~> 6.0)
   - GoogleAppMeasurement (6.0.2):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -85,6 +87,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - Google-Mobile-Ads-SDK
   - lottie-ios
 
 SPEC REPOS:
@@ -97,6 +100,7 @@ SPEC REPOS:
     - FirebaseDatabase
     - FirebaseInstanceID
     - FirebaseStorage
+    - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
@@ -113,6 +117,7 @@ SPEC CHECKSUMS:
   FirebaseDatabase: f48e067716864be2b855cf716b927ef375d6cfa0
   FirebaseInstanceID: f20243a1d828e0e9a3798b995174dedc16f1b32a
   FirebaseStorage: 926d41552072b9fee67aa645760f05f87b7ce604
+  Google-Mobile-Ads-SDK: 4bff3a7d621555f2317813e495fecce745681f7e
   GoogleAppMeasurement: a35a645835bae31b6bdc0576396bc23908f12a22
   GoogleUtilities: c7a0b08bda3bf808be823ed151f0e28ac6866e71
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
@@ -120,6 +125,6 @@ SPEC CHECKSUMS:
   lottie-ios: 9467723922dfff46f6d4e3019c32594a62440b7c
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: d11aed20f571630172a38ec1cd37b1d7aa4851f0
+PODFILE CHECKSUM: 02981c840a748a21f8b00866c2d491123d88810b
 
 COCOAPODS: 1.7.3

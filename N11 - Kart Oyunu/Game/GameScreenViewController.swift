@@ -10,7 +10,7 @@ import UIKit
 class GameScreenViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var          collectionView: UICollectionView!
     
     let cardList : [String] = ["a1","a2","a3","a4","a5","a6","a7","a8"]
     var levelCardList : [String] = []
@@ -22,7 +22,7 @@ class GameScreenViewController: UIViewController,UICollectionViewDelegate,UIColl
     var locationOfHiddenPictures : [IndexPath] = []
     var score = 0
     var cardRemain = Int()
-    var isFinished : Bool?
+    var isGameFinished : Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class GameScreenViewController: UIViewController,UICollectionViewDelegate,UIColl
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if isFinished == true
+        if isGameFinished == true
         {
             self.dismiss(animated: true, completion: nil)
         }
@@ -75,7 +75,7 @@ class GameScreenViewController: UIViewController,UICollectionViewDelegate,UIColl
                 }
                 else
                 {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
                         self.ifTheyNotMatched()
                     })
                 }
@@ -86,19 +86,22 @@ class GameScreenViewController: UIViewController,UICollectionViewDelegate,UIColl
     }
     func ifTheyMatched()
     {
+        self.view.isUserInteractionEnabled = false
         for item in selectedPictureLocation
         {
             let hiddenCell = collectionView.cellForItem(at: item) as? GameCardCollectionViewCell
             hiddenCell?.destroy()
             if cardRemain != 1
             {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
                     hiddenCell?.isHidden = true
+                    self.view.isUserInteractionEnabled = true
                 })
             }
             else
             {
                 hiddenCell?.isHidden = true
+                self.view.isUserInteractionEnabled = true
             }
             
         }
@@ -220,7 +223,7 @@ class GameScreenViewController: UIViewController,UICollectionViewDelegate,UIColl
     }
     func finishGame(result : Bool)
     {
-        isFinished = true
+        isGameFinished = true
         score = score + (timeRemain * 3)
         saveScore(score: score)
         openFinishGamePopUp(result: result)

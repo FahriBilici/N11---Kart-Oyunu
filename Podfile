@@ -10,6 +10,7 @@ pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'lottie-ios'
+pod 'Google-Mobile-Ads-SDK'
   # Pods for N11 - Kart Oyunu
 
 end

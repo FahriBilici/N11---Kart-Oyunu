@@ -31,7 +31,7 @@ class SetProfilePicturePopUpViewController: UIViewController,UICollectionViewDel
             }
         }
     }
-    @IBAction func chooseFromGallery(_ sender: Any) {
+    @IBAction func chooseImageFromGalleryOrCamera (_ sender: Any) {
         let actionSheet = UIAlertController(title: "Photo Source", message: "Choose Source", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action) in
             if UIImagePickerController.isSourceTypeAvailable(.camera)
@@ -61,7 +61,6 @@ class SetProfilePicturePopUpViewController: UIViewController,UICollectionViewDel
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-       // image.jpegData(compressionQuality: 0.5)
         let userID = UserDefaults.standard.value(forKey: "userID") as! String
         Service.shared.savePhotoToCloud(pic: image, userID: userID, success: {
         picker.dismiss(animated: true, completion: nil)

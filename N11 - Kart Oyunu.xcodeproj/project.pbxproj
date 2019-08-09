@@ -16,6 +16,9 @@
 		292E9CEE22DE07D100CFF325 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E9CED22DE07D100CFF325 /* Service.swift */; };
 		298B8EA722E0975F00DD034D /* SetProfilePicturePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298B8EA622E0975F00DD034D /* SetProfilePicturePopUpViewController.swift */; };
 		298B8EA922E09C7600DD034D /* DefaultProfilePicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298B8EA822E09C7600DD034D /* DefaultProfilePicCollectionViewCell.swift */; };
+		298D16CB22E9CC7800949FD8 /* LeaderbordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D16CA22E9CC7800949FD8 /* LeaderbordTableViewController.swift */; };
+		298D16CD22E9D5A300949FD8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D16CC22E9D5A300949FD8 /* Player.swift */; };
+		298D16CF22E9F0AE00949FD8 /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D16CE22E9F0AE00949FD8 /* LeaderboardTableViewCell.swift */; };
 		2995BD6322DF0BA400BEDE4F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995BD6222DF0BA400BEDE4F /* MainViewController.swift */; };
 		29FE15D222E6DFD300E11D54 /* GameCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE15D122E6DFD300E11D54 /* GameCardCollectionViewCell.swift */; };
 		29FE15D422E6DFE900E11D54 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE15D322E6DFE900E11D54 /* GameScreenViewController.swift */; };
@@ -35,6 +38,9 @@
 		292E9CED22DE07D100CFF325 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		298B8EA622E0975F00DD034D /* SetProfilePicturePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProfilePicturePopUpViewController.swift; sourceTree = "<group>"; };
 		298B8EA822E09C7600DD034D /* DefaultProfilePicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultProfilePicCollectionViewCell.swift; sourceTree = "<group>"; };
+		298D16CA22E9CC7800949FD8 /* LeaderbordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderbordTableViewController.swift; sourceTree = "<group>"; };
+		298D16CC22E9D5A300949FD8 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		298D16CE22E9F0AE00949FD8 /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
 		2995BD6222DF0BA400BEDE4F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		29FE15D122E6DFD300E11D54 /* GameCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		29FE15D322E6DFE900E11D54 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 				2995BD6222DF0BA400BEDE4F /* MainViewController.swift */,
 				29FE15D022E6DFB400E11D54 /* ProfilePicture */,
 				29FE15D522E7435F00E11D54 /* Game */,
+				298D16CA22E9CC7800949FD8 /* LeaderbordTableViewController.swift */,
+				298D16CC22E9D5A300949FD8 /* Player.swift */,
+				298D16CE22E9F0AE00949FD8 /* LeaderboardTableViewCell.swift */,
 			);
 			path = "N11 - Kart Oyunu";
 			sourceTree = "<group>";
@@ -253,13 +262,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298D16CD22E9D5A300949FD8 /* Player.swift in Sources */,
 				292E9CD822DDF8C500CFF325 /* AppDelegate.swift in Sources */,
+				298D16CB22E9CC7800949FD8 /* LeaderbordTableViewController.swift in Sources */,
 				29FE15D222E6DFD300E11D54 /* GameCardCollectionViewCell.swift in Sources */,
 				29FE15D422E6DFE900E11D54 /* GameScreenViewController.swift in Sources */,
 				292E9CEC22DE041E00CFF325 /* RegisterViewController.swift in Sources */,
 				29FE15D822E7439200E11D54 /* FinishPopUpViewController.swift in Sources */,
 				292E9CEE22DE07D100CFF325 /* Service.swift in Sources */,
 				2995BD6322DF0BA400BEDE4F /* MainViewController.swift in Sources */,
+				298D16CF22E9F0AE00949FD8 /* LeaderboardTableViewCell.swift in Sources */,
 				298B8EA722E0975F00DD034D /* SetProfilePicturePopUpViewController.swift in Sources */,
 				298B8EA922E09C7600DD034D /* DefaultProfilePicCollectionViewCell.swift in Sources */,
 			);
@@ -418,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "countryApp.N11---Kart-Oyunu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -437,7 +449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "countryApp.N11---Kart-Oyunu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
